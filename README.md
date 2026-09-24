@@ -1,0 +1,102 @@
+# 🎓 SPT Classes – Education Website
+
+SPT Classes is a modern educational website designed for coaching / tuition classes to showcase courses, manage batches, and provide an easy way for students and parents to connect with the institute.
+
+---
+
+## 📌 Table of Contents
+
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Folder Structure](#-folder-structure)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+- [Available Pages / Modules](#-available-pages--modules)
+- [Future Enhancements](#-future-enhancements)
+- [Contributing](#-contributing)
+- [Contact](#-contact)
+
+---
+
+## 📖 About the Project
+
+SPT Classes website aims to:
+
+- Build trust with parents and students through a clean, professional design  
+- Showcase courses, subjects, and batches offered by SPT Classes  
+- Provide important announcements, results, and contact details  
+- Allow students/parents to quickly reach out via contact form or WhatsApp/phone  
+
+This project is mainly focused on front-end UI/UX (and can later be extended with backend, admin panel, and student dashboard).
+
+---
+
+## ✨ Features
+
+- 🏠 **Home Page** – Hero section, brief about SPT Classes, highlights  
+- 📚 **Courses / Classes Page** – List of subjects, batches, timings, target exams  
+- 👨‍🏫 **About Us** – Info about SPT Classes, teaching style, vision & mission  
+- 📝 **Admissions / Enquiry** – Simple form or CTA buttons for WhatsApp/phone  
+- 🧑‍🎓 **Results / Achievements** – Toppers, rankers, testimonials, success stories  
+- 🔒 **Login Page** – Basic layout ready for future student/parent portal  
+- 📢 **Notices / Announcements** – Important updates (exams, holidays, etc.)  
+- 📱 **Responsive Design** – Works on desktop, tablet, and mobile  
+- 🎨 **Trustworthy Theme** – Clean typography, blue/white tones for trust, minimal design  
+
+*(You can update the above list based on what you have already implemented.)*
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend:**
+
+- HTML5  
+- CSS3 / SCSS / TailwindCSS / Bootstrap *(choose what you are using)*  
+- JavaScript / React.js *(choose accordingly)*  
+
+**Tools & Others (optional):**
+
+- Git & GitHub  
+- Figma / Canva for UI planning  
+- VS Code for development  
+
+---
+
+## 📂 Folder Structure
+
+> This is a sample structure. Update it according to your actual project.
+
+```bash
+SPT-Classes/
+├── public/
+│   ├── index.html
+│   └── assets/
+│       ├── images/
+│       └── icons/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── CourseCard.jsx
+│   │   └── TestimonialCard.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Courses.jsx
+│   │   ├── Login.jsx
+│   │   ├── Contact.jsx
+│   │   └── Results.jsx
+│   ├── styles/
+│   │   ├── global.css
+│   │   └── components.css
+│   ├── App.jsx
+│   ├── main.jsx / index.js
+│   └── router.js (if using React Router)
+├── .gitignore
+├── package.json
+└── README.md

@@ -1,0 +1,247 @@
+:root {
+  --accent-blue: #0b63c5;
+  --accent-dark: #020617;
+  --muted: #6b7280;
+  --input-bg: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #f7fbff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #dbeafe 0%,
+    #eaf3ff 50%,
+    #ffffff 100%
+  );
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.bg-waves {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(59, 130, 246, 0.20),
+    rgba(59, 130, 246, 0.08),
+    rgba(255, 255, 255, 0)
+  );
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+  position: relative;
+  z-index: 2;
+}
+
+.login-left {
+  flex: 0 0 34%;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 26px;
+  background: linear-gradient(180deg, #0f63c8 0%, #064a8a 100%);
+  color: #fff;
+}
+
+.login-left-top {
+  width: 100%;
+  max-width: 320px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.2);
+  margin-bottom: 28px;
+}
+
+.login-left-logo {
+  width: 90%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.login-left-content h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.login-left-content h2 span {
+  color: #ffeb3b;
+}
+
+.login-left-content p {
+  font-size: 14px;
+  color: rgba(227, 242, 255, 0.95);
+  max-width: 260px;
+}
+
+.login-right {
+  flex: 1;
+  padding: 36px 44px;
+}
+
+.login-right-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: var(--input-bg);
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+  background: #ffffff;
+}
+
+.input-error {
+  border-color: #dc2626 !important;
+  background: #fff5f5;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.password-hint {
+  font-size: 12px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.password-strength {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.password-strength-bar {
+  height: 8px;
+  width: 0%;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.password-strength-bar.weak {
+  background: #f97373;
+}
+
+.password-strength-bar.medium {
+  background: #fbbf24;
+}
+
+.password-strength-bar.strong {
+  background: #22c55e;
+}
+
+.password-strength-label.weak {
+  color: #b91c1c;
+}
+
+.password-strength-label.medium {
+  color: #92400e;
+}
+
+.password-strength-label.strong {
+  color: #166534;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent-dark);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 15px 34px rgba(2, 6, 23, 0.24);
+}
+
+.primary-btn:hover {
+  background: #020314;
+}
+
+.login-right-subtext {
+  font-size: 13px;
+  margin-top: 14px;
+  color: #4b5563;
+}
+
+.link-text {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .login-box {
+    flex-direction: column;
+    max-width: 520px;
+  }
+
+  .login-left {
+    padding: 22px;
+  }
+
+  .login-right {
+    padding: 22px;
+  }
+}
